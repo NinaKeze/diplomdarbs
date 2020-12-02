@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/userIdEditText"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:hint="Enter your user ID"
+        android:inputType="text"
+        android:clickable="true"
+        android:longClickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <Button
+        android:id="@+id/submitButton"
+
+        app:layout_constraintTop_toBottomOf="@id/userIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:text="Log In"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
